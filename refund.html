@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Refund &amp; Cancellation Policy — Fewori</title>
+<meta name="description" content="Trials, cancellation, refunds and billing disputes for Fewori subscriptions.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%231d1d1f'/%3E%3Ccircle cx='16' cy='16' r='6' fill='%23ffffff'/%3E%3C/svg%3E">
+<style>
+@font-face{font-family:"Inter Display";src:url("assets/fonts/inter-display-400.woff2") format("woff2");font-weight:400;font-display:swap}
+@font-face{font-family:"Inter Display";src:url("assets/fonts/inter-display-500.woff2") format("woff2");font-weight:500;font-display:swap}
+@font-face{font-family:"Inter Display";src:url("assets/fonts/inter-display-600.woff2") format("woff2");font-weight:600;font-display:swap}
+@font-face{font-family:"JetBrains Mono";src:url("assets/fonts/jetbrains-mono-400.woff2") format("woff2");font-weight:400;font-display:swap}
+*{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --title:#1d1d1f;--texto:#424242;--muted:#98989c;--gris:#f5f5f7;--azul:#0859d4;
+  --mono:"JetBrains Mono","Courier New",monospace;
+  --sans:"Inter Display","Helvetica Neue",Arial,sans-serif;
+  --wide:1400px;
+}
+html{-webkit-text-size-adjust:100%}
+body{background:#fff;color:var(--texto);font-family:var(--sans);font-size:16px;line-height:1.7;-webkit-font-smoothing:antialiased}
+
+.top{position:sticky;top:0;z-index:10;background:rgba(255,255,255,.86);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);
+  border-bottom:1px dashed rgba(18,18,19,.1)}
+.top__inner{max-width:var(--wide);margin:0 auto;padding:18px 24px;display:flex;align-items:center;justify-content:space-between}
+.wordmark{font-size:23px;font-weight:700;letter-spacing:-.9px;color:var(--title);text-decoration:none;border-bottom:0}
+.back{font-family:var(--mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);text-decoration:none;
+  display:inline-flex;align-items:center;gap:8px;border:1px solid rgba(18,18,19,.12);border-radius:999px;padding:8px 14px;transition:color .3s,border-color .3s}
+.back:hover{color:var(--title);border-color:rgba(18,18,19,.28)}
+
+.wrap{max-width:760px;margin:0 auto;padding:88px 24px 96px}
+.eyebrow{font-family:var(--mono);font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted)}
+h1{font-size:54px;line-height:1.06;letter-spacing:-.024em;font-weight:600;color:var(--title);margin:16px 0 22px}
+.meta{display:flex;flex-wrap:wrap;align-items:center;gap:14px;font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.meta .url{border:1px solid rgba(18,18,19,.12);border-radius:6px;padding:5px 9px;color:rgba(66,66,66,.6)}
+.divider{border:0;border-top:1px dashed rgba(18,18,19,.14);margin:38px 0 8px}
+
+h2{font-size:20px;line-height:1.3;letter-spacing:-.01em;font-weight:600;color:var(--title);margin:46px 0 12px}
+h3{font-size:15px;font-weight:600;letter-spacing:-.005em;color:var(--title);margin:26px 0 8px}
+p{margin:0 0 14px}
+p strong{color:var(--title);font-weight:600}
+ul{margin:10px 0 16px;padding-left:20px}
+li{margin:0 0 9px}
+li::marker{color:var(--muted)}
+.note{border-left:1px solid rgba(8,89,212,.28);padding:2px 0 2px 16px;color:rgba(66,66,66,.86);margin:18px 0}
+a{color:var(--azul);text-decoration:none;border-bottom:1px solid rgba(8,89,212,.22)}
+a:hover{border-bottom-color:var(--azul)}
+
+.foot{border-top:1px dashed rgba(18,18,19,.1);background:#fbfbfb}
+.foot__inner{max-width:var(--wide);margin:0 auto;padding:22px 24px;display:flex;align-items:center;justify-content:space-between;gap:18px;flex-wrap:wrap}
+.foot__c{font-family:var(--mono);font-size:10px;line-height:1.3;letter-spacing:.08em;text-transform:uppercase;color:rgba(66,66,66,.42)}
+.foot__links{display:flex;align-items:center;gap:22px}
+.foot__links a{font-family:var(--mono);font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:rgba(66,66,66,.52);
+  text-decoration:none;border-bottom:1px solid transparent;transition:color .3s,border-color .3s}
+.foot__links a:hover{color:var(--title);border-bottom-color:rgba(18,18,19,.3)}
+.foot__links a.is-now{color:var(--title)}
+
+@media (max-width:640px){
+  h1{font-size:34px}
+  .wrap{padding:56px 20px 72px}
+  .foot__inner{flex-direction:column;align-items:flex-start;gap:12px}
+}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="top__inner">
+    <a class="wordmark" href="onlines-home.html">Fewori</a>
+    <a class="back" href="onlines-home.html">Back to site <span aria-hidden="true">↗</span></a>
+  </div>
+</header>
+
+<main class="wrap">
+  <div class="eyebrow">Legal</div>
+  <h1>Refund &amp; Cancellation Policy</h1>
+  <div class="meta">
+    <span>Last updated · November 16, 2026</span>
+    <span class="url">fewori.com/refund</span>
+  </div>
+  <hr class="divider">
+
+  <h2>1. Free trial</h2>
+  <p>Every new workspace starts with a 7-day free trial. A card is required to begin so the workspace keeps running after the trial, but nothing is charged during the seven days. Cancel any time before the trial ends from your billing settings and you pay nothing.</p>
+
+  <h2>2. Plans and billing cycle</h2>
+  <p>Fewori is sold as a monthly or yearly subscription; plans and prices are listed on our pricing page. Paid plans renew automatically at the end of each period until cancelled. Yearly plans are billed once, up front, for the whole period.</p>
+
+  <h2>3. Cancellation</h2>
+  <ul>
+    <li>You can cancel at any time from your dashboard, without writing to us.</li>
+    <li>Your plan stays active until the end of the period you already paid for.</li>
+    <li>After it ends, paid features — publishing, AI generation, checkout — switch off; your pages, orders and customer records stay in your workspace.</li>
+    <li>We do not refund the remaining days of a cancelled period.</li>
+  </ul>
+
+  <h2>4. Refunds</h2>
+  <h3>Within 14 days of your first payment</h3>
+  <p>If you are new to a paid plan and the product is not what you expected, ask for a full refund within 14 days of your first payment and we will process it. This applies to the first subscription only, not to renewals, upgrades or additional workspaces.</p>
+
+  <h3>After the first 14 days</h3>
+  <p>Refunds are not granted automatically. We do review requests case by case when the cause is on our side, for example:</p>
+  <ul>
+    <li>a prolonged outage that stopped you from using the platform;</li>
+    <li>a billing error — a duplicate charge or a wrong amount;</li>
+    <li>a change to the product that materially reduces what your plan includes.</li>
+  </ul>
+
+  <h3>What is not refundable</h3>
+  <ul>
+    <li>AI generations already delivered and used (pages created, photographs generated);</li>
+    <li>months already served, or the remaining days of a cancelled period;</li>
+    <li>the price difference when you move to a cheaper plan;</li>
+    <li>domain names, print or third-party services bought on your behalf.</li>
+  </ul>
+
+  <h2>5. Refunds for your own shoppers</h2>
+  <p>Sales made on pages you publish are yours: you are the merchant, and refunds to your shoppers are issued by you through your payment provider. Fewori does not hold the money and cannot refund it for you. Our <a href="terms.html">Terms of Service</a> describe that relationship in section 5.</p>
+
+  <h2>6. How to request a refund</h2>
+  <p>Write to us through the contact section of our website with:</p>
+  <ul>
+    <li>the email address on your workspace;</li>
+    <li>the date and amount of the charge;</li>
+    <li>a sentence on why you are asking.</li>
+  </ul>
+  <p>We reply within 3 business days. Approved refunds go back to the original payment method and usually appear within 5–10 business days, depending on your bank.</p>
+
+  <h2>7. Plan changes</h2>
+  <p>You can upgrade or downgrade at any time. Upgrades take effect immediately and are charged pro rata for the rest of the period. Downgrades take effect at the start of the next period.</p>
+
+  <h2>8. Billing disputes</h2>
+  <p>If something looks wrong on a charge, write to us before opening a chargeback with your bank. We can usually fix it the same week, and a chargeback filed without contacting us first may pause your workspace while it is investigated.</p>
+
+  <h2>9. Contact</h2>
+  <p>Any question about a trial, an invoice or a cancellation: reach us through the contact section of our website.</p>
+  <div class="note">This policy is written for the Fewori platform as described on our site. It is not legal advice; have your own counsel review it before you launch commercially.</div>
+</main>
+
+<footer class="foot">
+  <div class="foot__inner">
+    <div class="foot__c">© 2026 Fewori. All rights reserved.</div>
+    <div class="foot__links">
+      <a href="privacy.html">Privacy</a>
+      <a href="terms.html">Terms</a>
+      <a class="is-now" href="refund.html">Refund</a>
+      <a href="onlines-home.html#contact">Contact</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
