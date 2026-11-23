@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Terms of Service — Fewori</title>
 <meta name="description" content="The terms that apply when you use Fewori to build, publish and sell from AI-generated product pages.">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%231d1d1f'/%3E%3Ccircle cx='16' cy='16' r='6' fill='%23ffffff'/%3E%3C/svg%3E">
+<link rel="icon" type="image/png" href="assets/logo-mark.png" />
 <style>
 @font-face{font-family:"Inter Display";src:url("assets/fonts/inter-display-400.woff2") format("woff2");font-weight:400;font-display:swap}
 @font-face{font-family:"Inter Display";src:url("assets/fonts/inter-display-500.woff2") format("woff2");font-weight:500;font-display:swap}
@@ -41,11 +41,19 @@ h3{font-size:15px;font-weight:600;letter-spacing:-.005em;color:var(--title);marg
 p{margin:0 0 14px}
 p strong{color:var(--title);font-weight:600}
 ul{margin:10px 0 16px;padding-left:20px}
+ol{margin:10px 0 16px;padding-left:22px}
 li{margin:0 0 9px}
 li::marker{color:var(--muted)}
+.sum{color:var(--muted);margin:-4px 0 14px;font-size:15px;line-height:1.6}
 .note{border-left:1px solid rgba(8,89,212,.28);padding:2px 0 2px 16px;color:rgba(66,66,66,.86);margin:18px 0}
 a{color:var(--azul);text-decoration:none;border-bottom:1px solid rgba(8,89,212,.22)}
 a:hover{border-bottom-color:var(--azul)}
+
+.toc{border:1px dashed rgba(18,18,19,.14);border-radius:10px;padding:22px 24px;margin:26px 0 8px}
+.toc p{font-family:var(--mono);font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin:0 0 12px}
+.toc__list{display:grid;grid-template-columns:1fr 1fr;gap:6px 22px}
+.toc__list a{font-size:14px;line-height:1.5;color:var(--texto);border-bottom:0}
+.toc__list a:hover{color:var(--azul)}
 
 .foot{border-top:1px dashed rgba(18,18,19,.1);background:#fbfbfb}
 .foot__inner{max-width:var(--wide);margin:0 auto;padding:22px 24px;display:flex;align-items:center;justify-content:space-between;gap:18px;flex-wrap:wrap}
@@ -59,6 +67,7 @@ a:hover{border-bottom-color:var(--azul)}
 @media (max-width:640px){
   h1{font-size:34px}
   .wrap{padding:56px 20px 72px}
+  .toc__list{grid-template-columns:1fr}
   .foot__inner{flex-direction:column;align-items:flex-start;gap:12px}
 }
 </style>
@@ -67,8 +76,8 @@ a:hover{border-bottom-color:var(--azul)}
 
 <header class="top">
   <div class="top__inner">
-    <a class="wordmark" href="onlines-home.html">Fewori</a>
-    <a class="back" href="onlines-home.html">Back to site <span aria-hidden="true">↗</span></a>
+    <a class="wordmark" href="index.html">Fewori</a>
+    <a class="back" href="index.html">Back to site <span aria-hidden="true">↗</span></a>
   </div>
 </header>
 
@@ -76,81 +85,266 @@ a:hover{border-bottom-color:var(--azul)}
   <div class="eyebrow">Legal</div>
   <h1>Terms of Service</h1>
   <div class="meta">
-    <span>Last updated · November 16, 2026</span>
+    <span>Last updated · November 23, 2026</span>
     <span class="url">fewori.com/terms</span>
   </div>
   <hr class="divider">
 
-  <h2>1. Acceptance</h2>
-  <p>These Terms of Service (“Terms”) form the agreement between you and Fewori (“Fewori”, “we”, “us”) for use of the Fewori platform (the “Service”). By creating a workspace, publishing a page or taking an order, you accept these Terms. If you use Fewori for a company, you confirm you are allowed to accept them on that company’s behalf.</p>
+  <p>Welcome to Fewori. By creating a workspace or using any of the Fewori services described below, you agree to be bound by these terms and conditions (the “<strong>Terms of Service</strong>”).</p>
+  <p>As used here, “<strong>we</strong>”, “<strong>us</strong>”, “<strong>our</strong>” and “<strong>Fewori</strong>” mean the company that operates fewori.com, and “<strong>you</strong>” means the person who registered the workspace, or the business on whose behalf that person registered it.</p>
+  <p>Fewori turns what you tell us about a product — a photo, a name, a short description — into a published product page: copy, photography, layout and checkout, plus the orders, contacts and follow-up that come after it. Any such service offered by Fewori is referred to in these Terms of Service as the “<strong>Service</strong>”. New features added to the Service are also covered by these Terms.</p>
+  <p>Before you create a workspace you must read and accept these Terms of Service together with our Acceptable Use Policy and our <a href="privacy.html">Privacy Policy</a>. The current version of these Terms is always available at fewori.com/terms.</p>
+  <p>The short summaries shown in grey under each heading are written for convenience only. They are not part of the agreement; the numbered clauses below are what bind you.</p>
 
-  <h2>2. What the Service does</h2>
-  <p>Fewori turns what you tell us about a product — a photo, a name, a short description — into a published product page: copy, photography, layout, checkout, and the order, contact and CRM tools that follow. Pages are published on a domain you control, and payments go to the payment account you connect.</p>
-  <p>Fewori is a software tool. We are not the seller of your products, we do not warehouse or ship them, and we do not act as a marketplace.</p>
+  <div class="toc">
+    <p>Contents</p>
+    <div class="toc__list">
+      <a href="#s1">1. Account Terms</a>
+      <a href="#s2">2. Account Activation</a>
+      <a href="#s3">3. Fewori Rights</a>
+      <a href="#s4">4. Your Responsibilities</a>
+      <a href="#s5">5. Payment of Fees and Taxes</a>
+      <a href="#s6">6. Confidentiality</a>
+      <a href="#s7">7. Limitation of Liability and Indemnification</a>
+      <a href="#s8">8. Intellectual Property and Your Materials</a>
+      <a href="#s9">9. Additional Services</a>
+      <a href="#s10">10. Feedback and Reviews</a>
+      <a href="#s11">11. Intellectual Property Infringement</a>
+      <a href="#s12">12. Privacy and Data Protection</a>
+      <a href="#s13">13. Term and Termination</a>
+      <a href="#s14">14. Modifications</a>
+      <a href="#s15">15. General Conditions</a>
+    </div>
+  </div>
 
-  <h2>3. Your account</h2>
-  <p>You need a valid email address and a workspace to use the Service. Keep your login secure and tell us promptly if you believe it has been used without your permission. You are responsible for everything done through your workspace, including what teammates you invite do.</p>
+  <h2 id="s1">1. Account Terms</h2>
+  <p class="sum">You are responsible for your workspace, for the material you upload and for the pages you publish. If you break these terms we may close your access. If we need to reach you, we write to your primary email address.</p>
+  <ol>
+    <li>To use the Service you must register a Fewori account (“<strong>Account</strong>”). Completing registration requires your full legal name, business address, telephone number, a valid email address and any other information we mark as required. We may refuse an application, or close an existing Account, at our discretion.</li>
+    <li>You must be at least 18 years old, or the age of majority where you live and from which you use the Service, whichever is higher.</li>
+    <li>You confirm that you use the Service to carry on a business activity, not for personal, household or family purposes.</li>
+    <li>We use the email address you provide at sign-up, as you update it, as the main channel for contacting you (“<strong>Primary Email Address</strong>”). You must keep it able to send and receive mail and check it regularly; messages that do not come from that address cannot be authenticated as yours. Where you have opted in to other channels, such as messaging apps, we may also use them.</li>
+    <li>You are responsible for keeping your password secure. Fewori is not liable for loss or damage caused by your failure to protect your Account. We may require additional security measures at any time.</li>
+    <li>Support for the Service is provided only to registered users. Questions about these Terms go to our support team.</li>
+    <li>You agree not to reproduce, duplicate, copy, sell, resell or exploit any part of the Service, use of the Service or access to the Service without our written permission.</li>
+    <li>You agree not to work around, bypass or circumvent technical limits of the Service — including processing orders outside our checkout, enabling features that are switched off, or decompiling, disassembling or reverse engineering the Service.</li>
+    <li>You agree not to access the Service, or monitor its content, using robots, spiders, scrapers or other automated means.</li>
+    <li>You understand that your material may be transferred unencrypted and may involve (a) transmissions over various networks and (b) changes to conform to the technical requirements of connecting networks or devices. “<strong>Materials</strong>” means your trademarks, copyright content, the products or services you sell through the Service (including descriptions and prices), and any photos, images, videos, graphics, written content, audio, code, information, reviews or other business content and data you provide to us or make available on your behalf.</li>
+  </ol>
 
-  <h2>4. Plans and billing</h2>
-  <ul>
-    <li>Fewori is sold as a subscription; current plans and prices are shown on our pricing page.</li>
-    <li>Subscriptions renew automatically for the period you chose until you cancel.</li>
-    <li>Payments for the subscription are processed by our payment provider; card details never reach our servers.</li>
-    <li>We may change prices with at least 30 days’ notice. Changes apply from your next renewal.</li>
-    <li>Cancellation and refunds follow our <a href="refund.html">Refund &amp; Cancellation Policy</a>.</li>
-  </ul>
+  <h2 id="s2">2. Account Activation</h2>
+  <p class="sum">One person is the Workspace Owner and answers for the Account and for anyone they invite. You are responsible for activating the payment connections and domains you use.</p>
 
-  <h2>5. Selling through Fewori</h2>
-  <h3>5.1 You are the merchant</h3>
-  <p>When you publish a page that takes orders or payments, the sale is between you and your shopper. You are the merchant of record: you are responsible for the product, its accuracy, its delivery, support, returns, refunds, taxes and the laws that apply where you sell.</p>
+  <h3>2.1 Workspace Owner</h3>
+  <ol>
+    <li>The person who opens the Account is the contracting party (“<strong>Workspace Owner</strong>”) for these Terms, and the person authorised to use any related account we provide in connection with the Service. The Workspace Owner’s name — and the legal name of the company that owns the pages, where applicable — must be clearly visible on the published pages.</li>
+    <li>If you sign up on behalf of your employer, your employer is the Workspace Owner. In that case you must use your work email address and you confirm you are authorised to bind your employer to these Terms.</li>
+    <li>An Account is tied to one Workspace Owner. A Workspace Owner may hold several workspaces. “<strong>Workspace</strong>” means the workspace, published pages and any retail location connected to the Account.</li>
+  </ol>
 
-  <h3>5.2 Payments go to your account</h3>
-  <p>You connect your own payment account (for example Stripe or PayPal). Shoppers pay through that provider and the money lands in your account. Fewori does not hold, split or route your funds, and we charge no commission on sales — our revenue is the subscription you pay for the tool. The provider’s own processing fees still apply, and are charged by them.</p>
+  <h3>2.2 Members</h3>
+  <ol>
+    <li>Depending on your plan you can add one or more members (“<strong>Members</strong>”) who can access the Account. Each Member needs a full legal name and a valid email address. The Workspace Owner sets permissions and decides how much each Member can see or change.</li>
+    <li>The Workspace Owner is responsible for (a) making sure employees, agents and contractors, including Members, follow these Terms and (b) any breach by them. That responsibility stays even where work is sublicensed or subcontracted to a third party.</li>
+    <li>The Workspace Owner and the people on Members seats are each a “<strong>Fewori User</strong>”.</li>
+  </ol>
 
-  <h3>5.3 Refunds, disputes and chargebacks</h3>
-  <p>Refunds to your shoppers, chargebacks and payment disputes are handled by you through your payment provider. Fewori is not a party to those disputes. If the dispute rate on your pages becomes high enough to put our platform at risk with a provider, we may suspend the payment connection on your workspace until it is resolved.</p>
+  <h3>2.3 Payment connections</h3>
+  <ol>
+    <li>Fewori does not hold your money. You connect your own payment account with a provider such as Stripe or PayPal, and you are solely responsible for opening, activating, maintaining and closing that account.</li>
+    <li>Until you connect a provider, pages can be published but cannot take payments. If you stop wanting a connection active, you must disconnect it in your workspace; we do not do that for you.</li>
+    <li>Payment providers are third party services under section 9.4 and their own terms apply alongside these Terms.</li>
+  </ol>
 
-  <h3>5.4 Customer data you collect</h3>
-  <p>Order and customer data collected on your pages belongs to your workspace. You are responsible for using it lawfully — including telling shoppers what you collect and how to contact you, and honouring the rights they have under the privacy laws that apply to you.</p>
+  <h3>2.4 Accelerated checkouts</h3>
+  <ol>
+    <li>Where your provider supports wallets such as Apple Pay or Google Pay, those options may appear on your checkout automatically. Removing them is your responsibility and is done in your provider’s or workspace settings.</li>
+    <li>By using a wallet on your pages you also accept the merchant terms of that wallet, as its operator may amend them. Continued use after an amendment means you accept the amended terms.</li>
+  </ol>
 
-  <h2>6. Acceptable use</h2>
-  <p>You agree not to:</p>
-  <ul>
-    <li>sell or promote anything unlawful, counterfeit or stolen, or anything your payment provider prohibits;</li>
-    <li>publish content that infringes someone else’s rights, or that is deceptive about what you are selling;</li>
-    <li>use the Service to send unsolicited bulk mail or to scrape other people’s data;</li>
-    <li>attempt to reverse engineer, probe or overload the Service, or work around usage limits;</li>
-    <li>resell or redistribute access to Fewori without our written agreement.</li>
-  </ul>
+  <h3>2.5 Domain names</h3>
+  <ol>
+    <li>Domains you connect or buy through Fewori renew automatically each year while the Account is active, unless no valid payment method is on file. Switching off auto-renewal is your responsibility.</li>
+  </ol>
 
-  <h2>7. Content and ownership</h2>
-  <p>Your photos, copy, product data and brand are yours. So is what Fewori generates for you — the page, the photographs, the text — once it is in your workspace. You give us the limited right to process that content to run the Service, for example to generate and publish your page, and to keep a copy for backups.</p>
-  <p>The platform itself — its design, code, models setup and documentation — remains ours. You may not copy or resell it.</p>
+  <h2 id="s3">3. Fewori Rights</h2>
+  <p class="sum">We decide who may use the Service and may change it at any time. We may refuse or remove material from any part of the Service, including your pages. We may serve your competitors, but we will not share your confidential information with them. In an ownership dispute we may freeze a workspace until the rightful owner is established.</p>
+  <ol>
+    <li>The Service has a range of features and not all of them are available to every customer at all times; we are under no obligation to offer any feature in any jurisdiction. Except where these Terms or the law say otherwise, we may modify the Service or any part of it, for any reason, at any time, without notice.</li>
+    <li>We may refuse or remove any Materials from any part of the Service where we decide, in our discretion, that what you offer or upload breaches our Acceptable Use Policy or these Terms.</li>
+    <li>Verbal or written abuse of any kind — including threats of abuse or retribution — towards any Fewori employee, member or officer results in immediate closure of the Account.</li>
+    <li>We may provide the Service to your competitors and promise no exclusivity. Fewori employees and contractors may also be customers and may compete with you, but may not use your Confidential Information (section 6) to do so.</li>
+    <li>If the ownership of an Account is disputed we may ask for documents to establish ownership, such as a business licence, government photo ID, the last four digits of the card on file, or confirmation of your role at the business.</li>
+    <li>We decide, in our discretion, who the rightful Workspace Owner is and may transfer an Account to them. If we cannot reasonably determine the owner, we may suspend the Account until the parties resolve it.</li>
+  </ol>
 
-  <h2>8. AI-generated output</h2>
-  <p>Copy and photography produced by AI are a starting point, not a guarantee. They can be inaccurate, incomplete or wrong about a detail of your product. You review and edit before publishing, and you are responsible for what goes live — including claims about materials, origin, safety or delivery time.</p>
+  <h2 id="s4">4. Your Responsibilities</h2>
+  <p class="sum">You are responsible for your pages, the goods or services you sell, and your relationship with your customers — not us. Your pages must state who you are, how to reach you, and your terms, refunds and delivery times.</p>
+  <ol>
+    <li>You agree to publish on your pages public contact information, your terms of service, your refund policy and your shipping policy, including fulfilment timelines. The contact information must include your name, address, telephone number and email address. If you use a third party supplier, tell your customers.</li>
+    <li>The Service is not a marketplace, and any contract of sale made through it is directly and only between you and your customer. You are the seller and merchant of record for every sale through the Service. You are responsible for your pages, your Materials — including anything you create with Fewori’s tools — the goods and services you sell, and every aspect of the transaction with your customer. That includes charging the customer, determining and collecting taxes, refunds, returns, fulfilment, customer service, fraudulent transactions, legal disclosures, regulatory compliance, alleged or actual breaches of applicable law — including consumer protection law wherever you sell — and your breach of these Terms. Fewori is not the seller or merchant of record and has no responsibility for your pages, your Materials, what you sell, or any part of the transaction between you and your customer.</li>
+    <li>You confirm that you will comply with all applicable laws, rules, regulations and third-party rights in using the Service and performing your obligations under these Terms.</li>
+    <li>Where we make an API available, its own terms govern access; you are solely responsible for activity carried out with your API credentials and for keeping them secure.</li>
+    <li>You agree to use Fewori checkout for any sale associated with your published pages. “<strong>Fewori checkout</strong>” means the checkout experience where a customer enters delivery and payment details after adding items and before placing the order, including checkouts that run through the checkout API.</li>
+  </ol>
 
-  <h2>9. Availability</h2>
-  <p>We aim to keep the Service online and fast, and we maintain it regularly. Some interruptions are unavoidable — maintenance windows, provider outages, incidents. We do not promise uninterrupted availability, and we are not liable for losses caused by downtime.</p>
+  <h2 id="s5">5. Payment of Fees and Taxes</h2>
+  <p class="sum">A valid payment method must stay on file for the subscription and any add-ons. Billing runs every 30 days. If payment fails for 28 days we may freeze the workspace; unpaid for 60 days, we may close it. Taxes are your responsibility.</p>
+  <ol>
+    <li>You pay the fees for your subscription (“<strong>Subscription Fees</strong>”) and any other applicable fees, including for add-ons, extra generation credits, domains, paid apps or third party services (“<strong>Additional Fees</strong>”). Subscription Fees and Additional Fees together are the “<strong>Fees</strong>”.</li>
+    <li>You must keep a valid payment method on file. We charge the Fees to any payment method you authorise (“<strong>Authorised Payment Method</strong>”) and keep charging until the Service is terminated and all outstanding Fees are paid. Unless stated otherwise, all Fees are in U.S. dollars.</li>
+    <li>Subscription Fees are paid in advance and billed in 30 day intervals (each a “<strong>Billing Date</strong>”). Additional Fees are charged as they arise. You are charged on each Billing Date for all outstanding Fees, and an invoice is sent to the Primary Email Address and is also available in your workspace.</li>
+    <li>If a payment fails we may retry any Authorised Payment Method. If it still fails within 28 days of our first attempt, we may suspend and revoke access to the Account. Your Account is reactivated once the outstanding Fees and the next cycle’s Fees are paid, and pages may be unavailable while suspended. If Fees stay unpaid for 60 days after suspension we may terminate the Account under section 13.</li>
+    <li>All Fees exclude applicable sales, goods and services, harmonised, provincial, state, local or other taxes, duties or charges now in force or enacted later (“<strong>Taxes</strong>”).</li>
+    <li>You are responsible for all Taxes arising from your subscription to or purchase of Fewori products and services. Where we charge such Taxes, they are calculated at the rates that apply to the billing address you give us, are added to the Fees and are charged to your Authorised Payment Method. If you are exempt, send us evidence of the exemption; the exemption applies only from the date we receive evidence we find satisfactory. If we do not charge Taxes, you decide whether they are payable and remit them yourself.</li>
+    <li>Sums payable to Fewori are paid free and clear of deductions or withholdings. Other than Taxes we charge and remit on your behalf, any withholding required by law is borne by you and paid separately to the relevant authority; we may still charge the full Fees to your Authorised Payment Method.</li>
+    <li>You are solely responsible for determining, collecting, withholding, reporting and remitting taxes, duties, fees, surcharges and additional charges arising from any sale on your pages or your use of the Service. The Service is not a marketplace, and any contract of sale through it is between you and your customer.</li>
+    <li>You must keep an accurate location in your workspace, and update it promptly if you change jurisdictions.</li>
+    <li>Except where our <a href="refund.html">Refund &amp; Cancellation Policy</a> provides otherwise, Fewori does not provide refunds.</li>
+    <li>Your use of any tax-related tools we offer is subject to their own terms.</li>
+  </ol>
 
-  <h2>10. Limitation of liability</h2>
-  <p>To the extent the law allows, Fewori is not liable for lost profits, lost sales, lost data or indirect or consequential losses arising from your use of the Service. Our total liability for any claim is limited to the amount you paid us for the Service in the twelve months before the claim.</p>
+  <h2 id="s6">6. Confidentiality</h2>
+  <p class="sum">Both sides use the other’s confidential information only to perform these Terms, and protect it.</p>
+  <ol>
+    <li>“<strong>Confidential Information</strong>” includes any information about a party’s business that is not public, such as business details, technical processes and formulas, software, customer and prospective customer lists, names and addresses, product designs, sales, costs including processing fees, price lists, unpublished financial information, business plans, marketing data, and any other confidential or proprietary information whether or not it is marked as such. Fewori’s Confidential Information includes information you receive about us or the Service that is not generally known, including our security programme and practices.</li>
+    <li>Each party uses the other’s Confidential Information only as needed to perform its obligations under these Terms. Each party takes reasonable steps, at least equivalent to those it takes for its own proprietary information, to prevent duplication, disclosure or use of that Confidential Information, except (i) by or to employees, agents and subcontractors who need it and who are under confidentiality obligations at least as strict, or (ii) where required by law, regulation or a court order, in which case, if legally permitted, the receiving party gives prompt written notice and uses reasonable efforts to have the disclosure treated as confidential. Confidential Information does not include information the receiving party can prove was already public or already known to it, was independently developed without use of or reference to the other party’s Confidential Information, or was later rightly obtained from another source without breach of these Terms.</li>
+  </ol>
 
-  <h2>11. Indemnity</h2>
-  <p>If a third party brings a claim because of the products you sold, the content you published, or your breach of these Terms, you agree to cover the resulting costs and damages, and to help us defend the claim.</p>
+  <h2 id="s7">7. Limitation of Liability and Indemnification</h2>
+  <p class="sum">We are not responsible for damages or claims that arise because you broke the law, breached this agreement or infringed someone else’s rights. The Service is provided “as is” and “as available”. Our warranties are limited and so is our liability for errors or interruptions.</p>
+  <ol>
+    <li>To the extent applicable law permits, Fewori and its suppliers are not liable for any direct, indirect, incidental, special, consequential or exemplary damages, including loss of profits, goodwill, use, data or other intangible losses, arising out of or relating to the use of, or inability to use, the Service or these Terms, however caused, including negligence.</li>
+    <li>You agree to indemnify and hold harmless Fewori and, as applicable, its parent, subsidiaries, affiliates, partners, officers, directors, agents, employees and suppliers from any claim or demand, including reasonable legal fees, made by a third party arising out of (a) your breach of these Terms or the documents they refer to, including the Acceptable Use Policy; (b) your violation of any law or third-party right; or (c) any aspect of the transaction between you and your customer, including refunds, fraudulent transactions, alleged or actual breaches of applicable law, including consumer protection law, or your breach of these Terms.</li>
+    <li>You are responsible for any breach of these Terms by your affiliates, agents or subcontractors, as if it were your own.</li>
+    <li>Your use of the Service is at your sole risk. The Service is provided “as is” and “as available” without any warranty or condition, express, implied or statutory.</li>
+    <li>We do not warrant that the Service will be uninterrupted, timely, secure or error-free.</li>
+    <li>We do not warrant that results obtained from the Service will be accurate or reliable, or that errors will be corrected. AI-generated copy and photography are a starting point; you review and edit before publishing.</li>
+    <li>We are not responsible for your tax obligations or liabilities relating to your use of the Service.</li>
+    <li>We do not warrant that the quality of any products, services, information or other material you obtain through the Service will meet your expectations.</li>
+  </ol>
 
-  <h2>12. Suspension and termination</h2>
-  <p>You can stop using Fewori at any time. We may suspend or close a workspace that breaches these Terms, that creates a payment or fraud risk, or where the law requires it. Where it is reasonable, we tell you first and give you a chance to export your pages and data.</p>
+  <h2 id="s8">8. Intellectual Property and Your Materials</h2>
+  <p class="sum">What you upload stays yours, and it is your responsibility. Fewori can use and publish what you upload in order to run and promote the Service. The platform itself remains ours.</p>
 
-  <h2>13. Changes to these Terms</h2>
-  <p>We may update these Terms as the Service evolves. If a change materially affects your rights or obligations we will notify workspace owners by email before it takes effect. Continuing to use the Service after that means you accept the updated Terms.</p>
+  <h3>8.1 Your Materials</h3>
+  <ol>
+    <li>We do not take ownership of the Materials you provide. We do need a licence to them. You grant Fewori a non-exclusive, transferable, sub-licensable, royalty-free, worldwide licence to host, use, distribute, expose, modify, run, copy, store, publicly perform, communicate to the public, broadcast, reproduce, make available, display and translate your Materials and to create derivative works of them. We may use that licence, for example, to operate, provide, evaluate, improve and promote the Service, and to perform our obligations under these Terms. As part of the Service we may list, combine, feature and promote your Materials, pages and trademarks in channels we or our partners operate. You confirm that you hold (a) the rights needed to grant this licence and (b) the rights and consents needed for us to use or process any personal information associated with the Materials under applicable privacy law.</li>
+    <li>You waive any moral rights you may have in the Materials in favour of Fewori, and agree that this waiver may be relied on by anyone who obtains rights in the Materials through us.</li>
+    <li>If you owned the Materials before uploading them, they remain yours, subject to the rights and licences granted here or elsewhere. You can remove your pages at any time by deleting the Account. Removing them does not end licences we need to exercise rights or perform obligations that arose during the term.</li>
+    <li>You agree that we may review and delete any or all Materials submitted to the Service at any time, although we are not obliged to do so.</li>
+    <li>You grant us a non-exclusive, transferable, sub-licensable, royalty-free, worldwide licence to use the names, trademarks, service marks and logos associated with your pages (“<strong>Your Trademarks</strong>”) to operate, provide and promote the Service and to perform our obligations and exercise our rights under these Terms. That licence survives termination only to the extent needed for rights and obligations that arose during the term.</li>
+  </ol>
 
-  <h2>14. Governing law</h2>
-  <p>These Terms are governed by the laws of the jurisdiction in which Fewori is established, without regard to conflict-of-law rules. Disputes are handled by the courts of that jurisdiction, unless the law where you live gives you another forum.</p>
+  <h3>8.2 Fewori Intellectual Property</h3>
+  <ol>
+    <li>You may not use any trademark, logo or service mark of Fewori, registered or not, including the Fewori name and mark, unless we authorise it in writing. You agree not to adopt marks that could be confused with ours, including variations or misspellings.</li>
+    <li>You agree not to buy, register or use search or pay-per-click keywords, trademarks, email addresses, social media names or domain names (including top-level domains, subdomains and page URLs) that use or include Fewori or its marks, or anything confusingly similar.</li>
+    <li>These Terms give you no right to practise Fewori patents.</li>
+  </ol>
 
-  <h2>15. Contact</h2>
-  <p>Questions about these Terms, a suspension, or a billing issue: reach us through the contact section of our website.</p>
-  <div class="note">These Terms are written for the Fewori platform as described on our site. They are not legal advice; have your own counsel review them before you launch commercially.</div>
+  <h2 id="s9">9. Additional Services</h2>
+
+  <h3>9.1 Scope</h3>
+  <p>Beyond the core Service we may offer additional products, applications and tools (“<strong>Additional Services</strong>”). Your access to any Additional Service is subject to these Terms or, in some cases, to separate fees, terms and policies (“<strong>Additional Service Terms</strong>”).</p>
+
+  <h3>9.2 Generation credits</h3>
+  <p>Plans include a monthly allowance of page generations, photographs and copy runs, and you can buy extra credits. Credits are consumed when a generation completes, are not refundable once used, and do not carry over between billing cycles unless your plan says otherwise. Image and copy output depends on the material you give us and on third-party model providers.</p>
+
+  <h3>9.3 Beta Services</h3>
+  <p class="sum">Beta features are not part of the regular Service, may contain errors, may change or never ship, and you use them at your own risk.</p>
+  <p>We may invite you to try pre-release or beta features (“<strong>Beta Services</strong>”). Beta Services are not part of the Service and may carry additional terms we give you before use. Beta Services and related conversations and materials are our Confidential Information. You agree not to make public statements about, or otherwise disclose, your participation without our prior written consent. We make no promise that Beta Services will work, may discontinue them at any time, and accept no liability for harm arising from them. They may not behave like a final version, and we may never release one.</p>
+
+  <h3>9.4 Third Party Services</h3>
+  <p class="sum">Third party services are your own arrangement with their provider; we do not warrant them, so take advice before relying on them.</p>
+  <ol>
+    <li>We may give you access to, or enable, third-party software, applications, products, services or links (“<strong>Third Party Services</strong>”). They are offered as a convenience, and your purchase, access or use is solely between you and the provider (“<strong>Third Party Provider</strong>”). The provider’s own terms also apply.</li>
+    <li>Your use of Third Party Services is at your own risk and it is your responsibility to read the terms between you and the provider. We may receive a revenue share from providers we recommend or that you engage.</li>
+    <li>We make no warranty about Third Party Services or Providers. We do not control them and are not liable for them. Availability, or integration with the Service, is not an endorsement. We may disable access to any Third Party Service at any time, in our discretion, without notice. If a Third Party Service relies on tax calculators, treat the output as reference, not as tax advice.</li>
+    <li>If you install or enable a Third Party Service, you authorise us to share on your behalf, and to let the provider access, your data and Materials as needed for the integration to work. Any exchange with the provider is solely between you and the provider; we are not responsible for disclosure, modification or deletion of your data by them, or for losses that follow.</li>
+    <li>Maps, model providers and analytics tools used inside the Service are Third Party Services, and their own acceptable use and privacy terms apply to your use.</li>
+    <li>By requesting assistance or information about a Third Party Service you consent to being contacted by one or more providers at your Primary Email Address; we may also receive copies of your correspondence with them. You may allow providers access to parts of your workspace and set their access level.</li>
+    <li>Your relationship with a provider is strictly between you and the provider; we are not obliged to intervene in a dispute between you.</li>
+    <li>We are not liable for any direct, indirect, incidental, special, consequential, punitive, extraordinary or exemplary damages resulting from a Third Party Service or your relationship with a provider, even if we were advised of the possibility.</li>
+    <li>You agree to indemnify and hold us, and as applicable our parent, subsidiaries, affiliates, partners, officers, directors, agents, employees and suppliers, harmless from any claim or demand, including reasonable legal fees, arising out of your use of a Third Party Service or your relationship with a provider.</li>
+  </ol>
+
+  <h3>9.5 Email and messaging</h3>
+  <p class="sum">If you send mail or messages through the Service, you follow our terms, the providers’ acceptable use policies, and the law.</p>
+  <ol>
+    <li>The Service can send messages to your customers, including order confirmations and marketing (“<strong>Messaging Services</strong>”). Use them in compliance with these Terms and the law of the place you send from and the place messages are received. Messaging Services rely on third party providers and their acceptable use policies apply.</li>
+    <li>We may scan content before delivery to limit spam, phishing and other malicious material. By using the Messaging Services you expressly grant us that right. We do not warrant that they will be free of such material, and each customer is responsible for the content their pages generate.</li>
+    <li>You agree to send only to addresses that opted in, never to purchased or rented lists, never via servers you lack permission to use, never to non-specific addresses, and to include a working unsubscribe link, honour unsubscribe requests within 10 days, link to your current privacy policy, avoid disguising the origin or falsifying headers, include your valid physical mailing address, and never forward chain letters, pyramid schemes or incentivised forwarding.</li>
+    <li>If you or a customer suspect a breach of these messaging requirements, report it to support. We decide compliance in our discretion.</li>
+  </ol>
+
+  <h3>9.6 Domains</h3>
+  <p>You may buy or connect a domain through Fewori. Registration renews automatically each year while the Account is active unless you switch off auto-renewal. Once an Account is terminated, handling the domain with the registrar becomes your responsibility.</p>
+
+  <h3>9.7 Pixels and analytics</h3>
+  <p class="sum">If you add tracking to your pages you must have the consents the law requires.</p>
+  <ol>
+    <li>We let you add tracking pixels so that you or a third party can record events on your pages (“<strong>Pixel Manager</strong>”). You manage pixels from your workspace settings.</li>
+    <li>You will comply with applicable law and obtain all necessary consents from every visitor and customer whose events you track; if you pass us data collected by pixels, including names, email addresses, phone numbers or other personal data, you have the rights and consents needed first; we may disable pixels we identify as malicious; and you will not use pixels to promote unlawful, infringing, defamatory or otherwise harmful activity, or to disable, interfere with or circumvent the Service.</li>
+    <li>We may collect information about how pixels are used and which scripts are added, and use it to improve, maintain, protect and develop the Pixel Manager.</li>
+  </ol>
+
+  <h3>9.8 Checkout extensions</h3>
+  <p class="sum">If you customise the checkout with extensions, compliance and consents are yours, and we may disable an extension that breaks these Terms.</p>
+  <ol>
+    <li>We let you use extensions to customise the checkout (“<strong>Checkout Extensions</strong>”). You are responsible for choosing and using them, for complying with the law and for obtaining all necessary consents; if you pass us data collected through extensions you have the rights and consents needed first; we may disable extensions that we identify as breaching these Terms; and you will not use them to promote unlawful, infringing, defamatory or otherwise harmful activity, or to disable, interfere with or circumvent the Service.</li>
+    <li>We may collect information about Checkout Extensions in line with our <a href="privacy.html">Privacy Policy</a>.</li>
+  </ol>
+
+  <h2 id="s10">10. Feedback and Reviews</h2>
+  <p class="sum">We welcome your ideas, but are not obliged to keep them confidential, and may use them freely.</p>
+  <p>We welcome ideas and suggestions about improving the Service. Any idea, suggestion or related material, or any review of the Service, a Third Party Service or a Third Party Provider (“<strong>Feedback</strong>”), that you send us carries no obligation of confidentiality or of compensation. By sending Feedback you waive your rights in it, and we are free to use and implement it, as given or as modified, without permission from you or anyone else. Reviews you submit about a Third Party Service or Provider must be accurate to the best of your knowledge and must not be unlawful, obscene, threatening, defamatory, invasive of privacy, infringing or otherwise injurious. We may remove or edit such reviews but do not routinely review them.</p>
+
+  <h2 id="s11">11. Intellectual Property Infringement</h2>
+  <p class="sum">We respect intellectual property rights and expect you to do the same.</p>
+  <p>We respect the valid intellectual property rights of others and expect our customers to do the same. Publishing content that infringes those rights breaches our Acceptable Use Policy; the content may be removed and the Account closed at our discretion. If you believe content on the Service infringes your rights, report it to support and we will look into it.</p>
+
+  <h2 id="s12">12. Privacy and Data Protection</h2>
+  <p class="sum">Our handling of your personal information is described in our Privacy Policy; your customers’ data is further covered by these Terms and our data processing terms. The Service follows PCI DSS.</p>
+  <ol>
+    <li>We are committed to protecting your personal information and the personal information of your customers.</li>
+    <li>Our collection, use, disclosure and processing of the personal data of your customers is subject to these Terms, our data processing terms and our <a href="privacy.html">Privacy Policy</a>.</li>
+    <li>Our collection, use, disclosure and processing of your own personal information is governed by our <a href="privacy.html">Privacy Policy</a>.</li>
+    <li>We comply with applicable Payment Card Industry Data Security Standards (“<strong>PCI DSS</strong>”) when providing the Service. Where the Service stores, processes or transmits account data on your behalf, we take responsibility for securing it under the applicable PCI DSS requirements. If you store, process or transmit account data, you must stay compliant with PCI DSS and give us evidence of that on request. You agree not to impair the security of account data, including by modifying, bypassing or circumventing technical limits of the Service, by using third-party proxies or other interventions that impair security, or by using the Service in breach of these Terms. Where you impair that security we cannot ensure PCI DSS compliance and are not responsible for the security of account data.</li>
+  </ol>
+
+  <h2 id="s13">13. Term and Termination</h2>
+  <p class="sum">The agreement runs from registration until either side terminates it. You can cancel at any time by contacting support; we may suspend or close an Account. Domains you bought stop renewing, and no Fees are refunded except under our refund policy.</p>
+  <ol>
+    <li>These Terms start on the date your registration for a Service completes and continue until terminated as set out below (the “<strong>Term</strong>”).</li>
+    <li>You may cancel the Account and terminate these Terms at any time by contacting Fewori support and following the instructions you are given.</li>
+    <li>Without limiting other remedies, we may suspend or terminate the Account or these Terms for any reason, without notice, at any time, unless the law requires otherwise, including where we suspect fraudulent activity connected with the Service. Termination does not affect rights or obligations that arose before it.</li>
+    <li>On termination by either party for any reason: (a) we stop providing the Service and you can no longer access the Account; (b) unless these Terms provide otherwise, you are not entitled to refunds of Fees, pro rata or otherwise; (c) any balance owed for use of the Service up to that date becomes immediately due; and (d) your published pages are taken offline.</li>
+    <li>If you bought a domain through Fewori, it stops renewing on cancellation; after termination, handling all matters with the registrar is your responsibility.</li>
+    <li>If Fees are outstanding at termination you receive one final invoice by email; once it is paid in full you are not charged again.</li>
+  </ol>
+
+  <h2 id="s14">14. Modifications</h2>
+  <p class="sum">If we change these Terms in a way that materially affects your rights or your use of the Service, we tell you in advance — unless the change is for legal, fraud-prevention or security reasons, or to restrict abusive activity.</p>
+  <ol>
+    <li>We may update or change any part of these Terms at any time. Where a change materially and adversely affects your use of the Service or your rights under these Terms we give reasonable advance notice, by email to the Primary Email Address, by notice in your workspace, or by similar means. We may nonetheless make such changes with immediate effect (i) for legal, regulatory, fraud and abuse prevention or security reasons, or (ii) to restrict products or activities we consider unsafe, inappropriate or offensive. Unless our notice says otherwise, changes take effect when the updated Terms are posted at this location. Continuing to use the Service after notice, or after posting, means you accept the amended Terms. If you do not agree, stop using the Service.</li>
+    <li>We may change the Fees from time to time, with 30 days’ advance notice by email, by notice in your workspace, or by similar means. We are not liable to you or any third party for modifying, changing the price of, suspending or discontinuing the Service or any part of it.</li>
+  </ol>
+
+  <h2 id="s15">15. General Conditions</h2>
+  <p class="sum">These Terms, with the documents they refer to, are the whole agreement between us. If one provision fails, the rest stands. We may assign the agreement; you may not, without our consent.</p>
+  <ol>
+    <li>These Terms, together with the Acceptable Use Policy, our Privacy Policy, our data processing terms and any terms they refer to, are the entire agreement between us about the Service, and replace earlier agreements and understandings on the same subject.</li>
+    <li>Our failure to enforce a right, or to act on a breach, is not a waiver of that right or of later breaches.</li>
+    <li>Headings and the short summaries are for navigation only and do not affect the meaning of the clauses.</li>
+    <li>These Terms are governed by and interpreted under the laws of the jurisdiction in which Fewori is established, without regard to conflict-of-law rules, and the United Nations Convention on Contracts for the International Sale of Goods does not apply.</li>
+    <li>These Terms may be available in languages other than English. If the English version conflicts with another language version, the most current English version at fewori.com/terms prevails, and disputes are resolved in English unless the law requires otherwise.</li>
+    <li>All provisions bind and benefit the parties and their heirs, successors, permitted assigns and legal representatives. We may assign these Terms without notice or consent. You may not assign or transfer these Terms, or your rights and obligations under them, to a third party without our prior written consent.</li>
+    <li>If any provision, or part of it, is held invalid, illegal or unenforceable, that does not affect the other provisions or the unaffected part, and these Terms are read as if the invalid part had never been included.</li>
+    <li>On termination, the related rights and obligations end immediately, except that (a) you remain responsible for obligations connected with transactions entered into before termination and for liabilities accrued before or through termination; and sections 1, 5, 6, 7, 8.1, 10, 12, 13, 14(1) and 15 survive termination or expiry.</li>
+  </ol>
+
+  <div class="note">Questions about these Terms, a suspension or a billing issue: reach us through the contact section of our website. These Terms are written for the Fewori platform as described on our site; they are not legal advice — have your own counsel review them before you launch commercially.</div>
 </main>
 
 <footer class="foot">
@@ -160,7 +354,7 @@ a:hover{border-bottom-color:var(--azul)}
       <a href="privacy.html">Privacy</a>
       <a class="is-now" href="terms.html">Terms</a>
       <a href="refund.html">Refund</a>
-      <a href="onlines-home.html#contact">Contact</a>
+      <a href="index.html#contact">Contact</a>
     </div>
   </div>
 </footer>
