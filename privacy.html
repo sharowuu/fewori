@@ -4,8 +4,8 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Privacy Policy — Fewori</title>
-<meta name="description" content="How Fewori collects, uses and protects data when you build, publish and sell with an AI product page.">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%231d1d1f'/%3E%3Ccircle cx='16' cy='16' r='6' fill='%23ffffff'/%3E%3C/svg%3E">
+<meta name="description" content="How Fewori collects, uses, shares and protects personal data when you build, publish and sell with an AI product page.">
+<link rel="icon" type="image/png" href="assets/logo-mark.png" />
 <style>
 @font-face{font-family:"Inter Display";src:url("assets/fonts/inter-display-400.woff2") format("woff2");font-weight:400;font-display:swap}
 @font-face{font-family:"Inter Display";src:url("assets/fonts/inter-display-500.woff2") format("woff2");font-weight:500;font-display:swap}
@@ -21,7 +21,6 @@
 html{-webkit-text-size-adjust:100%}
 body{background:#fff;color:var(--texto);font-family:var(--sans);font-size:16px;line-height:1.7;-webkit-font-smoothing:antialiased}
 
-/* top bar */
 .top{position:sticky;top:0;z-index:10;background:rgba(255,255,255,.86);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);
   border-bottom:1px dashed rgba(18,18,19,.1)}
 .top__inner{max-width:var(--wide);margin:0 auto;padding:18px 24px;display:flex;align-items:center;justify-content:space-between}
@@ -30,7 +29,6 @@ body{background:#fff;color:var(--texto);font-family:var(--sans);font-size:16px;l
   display:inline-flex;align-items:center;gap:8px;border:1px solid rgba(18,18,19,.12);border-radius:999px;padding:8px 14px;transition:color .3s,border-color .3s}
 .back:hover{color:var(--title);border-color:rgba(18,18,19,.28)}
 
-/* content */
 .wrap{max-width:760px;margin:0 auto;padding:88px 24px 96px}
 .eyebrow{font-family:var(--mono);font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted)}
 h1{font-size:54px;line-height:1.06;letter-spacing:-.024em;font-weight:600;color:var(--title);margin:16px 0 22px}
@@ -40,16 +38,24 @@ h1{font-size:54px;line-height:1.06;letter-spacing:-.024em;font-weight:600;color:
 
 h2{font-size:20px;line-height:1.3;letter-spacing:-.01em;font-weight:600;color:var(--title);margin:46px 0 12px}
 h3{font-size:15px;font-weight:600;letter-spacing:-.005em;color:var(--title);margin:26px 0 8px}
+h4{font-size:14px;font-weight:600;letter-spacing:-.005em;color:var(--title);margin:22px 0 6px}
 p{margin:0 0 14px}
 p strong{color:var(--title);font-weight:600}
 ul{margin:10px 0 16px;padding-left:20px}
+ol{margin:10px 0 16px;padding-left:22px}
 li{margin:0 0 9px}
 li::marker{color:var(--muted)}
+.sum{color:var(--muted);margin:-4px 0 14px;font-size:15px;line-height:1.6}
 .note{border-left:1px solid rgba(8,89,212,.28);padding:2px 0 2px 16px;color:rgba(66,66,66,.86);margin:18px 0}
 a{color:var(--azul);text-decoration:none;border-bottom:1px solid rgba(8,89,212,.22)}
 a:hover{border-bottom-color:var(--azul)}
 
-/* footer */
+.toc{border:1px dashed rgba(18,18,19,.14);border-radius:10px;padding:22px 24px;margin:26px 0 8px}
+.toc p{font-family:var(--mono);font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin:0 0 12px}
+.toc__list{display:grid;grid-template-columns:1fr 1fr;gap:6px 22px}
+.toc__list a{font-size:14px;line-height:1.5;color:var(--texto);border-bottom:0}
+.toc__list a:hover{color:var(--azul)}
+
 .foot{border-top:1px dashed rgba(18,18,19,.1);background:#fbfbfb}
 .foot__inner{max-width:var(--wide);margin:0 auto;padding:22px 24px;display:flex;align-items:center;justify-content:space-between;gap:18px;flex-wrap:wrap}
 .foot__c{font-family:var(--mono);font-size:10px;line-height:1.3;letter-spacing:.08em;text-transform:uppercase;color:rgba(66,66,66,.42)}
@@ -62,6 +68,7 @@ a:hover{border-bottom-color:var(--azul)}
 @media (max-width:640px){
   h1{font-size:34px}
   .wrap{padding:56px 20px 72px}
+  .toc__list{grid-template-columns:1fr}
   .foot__inner{flex-direction:column;align-items:flex-start;gap:12px}
 }
 </style>
@@ -70,8 +77,8 @@ a:hover{border-bottom-color:var(--azul)}
 
 <header class="top">
   <div class="top__inner">
-    <a class="wordmark" href="onlines-home.html">Fewori</a>
-    <a class="back" href="onlines-home.html">Back to site <span aria-hidden="true">↗</span></a>
+    <a class="wordmark" href="index.html">Fewori</a>
+    <a class="back" href="index.html">Back to site <span aria-hidden="true">↗</span></a>
   </div>
 </header>
 
@@ -79,75 +86,159 @@ a:hover{border-bottom-color:var(--azul)}
   <div class="eyebrow">Legal</div>
   <h1>Privacy Policy</h1>
   <div class="meta">
-    <span>Last updated · November 16, 2026</span>
+    <span>Last updated · November 23, 2026</span>
     <span class="url">fewori.com/privacy</span>
   </div>
   <hr class="divider">
 
-  <h2>1. Who we are</h2>
-  <p>Fewori (“Fewori”, “we”, “our”, “us”) provides a platform that turns a product photo into a finished product page: AI-written copy, AI-generated photography, publishing on your own domain, and the order, payment and contact tools that go with it (the “Service”). This Privacy Policy explains what we collect when you use the Service, why we collect it, and what you can do about it.</p>
-
-  <h2>2. Information we collect</h2>
-  <h3>Account information</h3>
-  <p>When you create a workspace we collect your name, email address and password, plus the workspace and domain details you connect. Paid subscriptions are processed by our payment providers — we do not store full card numbers on our servers.</p>
-
-  <h3>Content you provide</h3>
-  <p>You upload product photos, names, descriptions, prices, variants and page copy. We process this content to generate the page, the photographs and the text that you publish. Your content stays in your workspace and is never shown to other customers.</p>
-
-  <h3>Customer and order data</h3>
-  <p>When a shopper buys from a page you published, we store the details needed to fulfil the order — typically name, email, shipping address, phone, items, amounts and order status — and show them in your orders dashboard and CRM. This data belongs to your workspace: you decide who inside your team can see it.</p>
-
-  <h3>Usage data</h3>
-  <p>We record how the Service is used (pages opened, features used, generation runs, page views and form submissions) so we can keep the product working, show you performance numbers and fix problems. Usage records are tied to your workspace, not to individual shoppers.</p>
-
-  <h3>Payment data</h3>
-  <p>Shopper payments are handled by the payment provider you connect (for example Stripe or PayPal). Those providers process the card or wallet details directly; we receive the outcome of the transaction and the order record, not the payment credentials.</p>
-
-  <h2>3. How we use information</h2>
+  <h2 id="intro">1. Introduction</h2>
+  <p class="sum">How Fewori handles your data.</p>
+  <p>To build product pages that people can trust, we collect and use information about the people who touch the Service:</p>
   <ul>
-    <li>to run the Service: generate pages, photographs and copy, publish them, and take orders;</li>
-    <li>to process subscriptions, invoices and payments;</li>
-    <li>to show you traffic, conversion and order numbers for your pages;</li>
-    <li>to send essential messages about your account, an order or a policy change;</li>
-    <li>to give support and answer your requests;</li>
-    <li>to detect abuse, fraud and technical incidents, and to keep the Service secure.</li>
+    <li><strong>merchants using Fewori</strong> — the businesses that create, publish and sell from product pages;</li>
+    <li><strong>shoppers</strong> — the customers who visit and buy from a page built with Fewori;</li>
+    <li><strong>partners</strong> — developers, agencies and referrers who help merchants build or improve their pages;</li>
+    <li><strong>visitors</strong> — anyone reading our website or contacting our support team.</li>
   </ul>
-  <p>We do not sell personal information, and we do not use your content or your shoppers’ data to advertise anything.</p>
+  <p>This policy and the notices it refers to (together, the “<strong>Privacy Policy</strong>”) explain how we collect, use and share your Personal Data. “<strong>Personal Data</strong>” means information defined as personal data, personal information or personally identifiable information under the data protection laws that apply to you. Terms that are capitalised here but not defined carry the meaning given in our <a href="terms.html">Terms of Service</a>.</p>
+  <p>If our practices change we may update this Privacy Policy, and where a change is significant we will tell you — for example in your workspace or by email.</p>
 
-  <h2>4. AI processing</h2>
-  <p>Page copy, product photography and some page structure are produced by AI models. To do that, the product photos, names and descriptions you provide are sent to the model provider that powers the feature. We send only what the generation needs — not your account credentials, your shoppers’ data or your other pages. Generated results are yours to edit, replace or discard before publishing.</p>
+  <div class="toc">
+    <p>Contents</p>
+    <div class="toc__list">
+      <a href="#intro">1. Introduction</a>
+      <a href="#values">2. Our values</a>
+      <a href="#why">3. Why we process your information</a>
+      <a href="#rights">4. Your rights over your information</a>
+      <a href="#where">5. Where we send your information</a>
+      <a href="#retention">6. How long we retain your information</a>
+      <a href="#ml">7. Our use of machine learning</a>
+      <a href="#protect">8. How we protect your information</a>
+      <a href="#cookies">9. Cookies and other tracking technologies</a>
+      <a href="#contact">10. How you can reach us</a>
+      <a href="#us">11. United States regional privacy notice</a>
+    </div>
+  </div>
 
-  <h2>5. Sharing with service providers</h2>
-  <p>We work with a small number of providers who process data on our behalf under contract:</p>
+  <h2 id="values">2. Our values</h2>
+  <p class="sum">Trust is the foundation of the Fewori platform, and that includes trusting us to do the right thing with your information. Three values guide how we build.</p>
+
+  <h3>Your information belongs to you</h3>
+  <p>We work out which information we actually need to run the Service and try to collect only that. Where we can, we delete or anonymise information once it is no longer needed. Our engineers build with privacy in mind and work alongside the people who handle security. The guiding principle is simple: your information belongs to you, and we use it only to your benefit.</p>
+
+  <h3>We protect your information from others</h3>
+  <p>If a third party asks us for your Personal Data, we refuse unless you allow it or the law requires it. When the law requires it we tell you in advance, unless we are legally barred from doing so.</p>
+
+  <h3>We help merchants and partners meet their privacy obligations</h3>
+  <p>Most of the businesses on Fewori do not have a dedicated privacy team. We build the product so it can be used in a privacy-friendly way by default, document the topics that matter most, and answer the privacy questions merchants send us.</p>
+
+  <h2 id="why">3. Why we process your information</h2>
+  <p class="sum">We use information to provide and improve the Service, and where a legitimate business reason applies. Different legal bases apply to different uses.</p>
+  <p>We use your information for purposes connected with providing and improving the Service — for example to process your subscription, to generate and publish your pages, or to answer a support request — and where we or someone we work with needs it for a reason related to their business, such as a payment provider handling a transaction.</p>
+  <p>Depending on whether you are a merchant, shopper, partner or visitor, the purposes and the categories of recipients differ; the sections below and any provider notices describe them.</p>
+  <p>We rely on different legal bases, for example:</p>
   <ul>
-    <li><strong>Hosting and storage</strong> — to keep the site, your pages and your uploads online;</li>
-    <li><strong>Payment providers</strong> — to take subscription payments and, when you connect an account, shopper payments;</li>
-    <li><strong>AI providers</strong> — to generate copy and product photography;</li>
-    <li><strong>Email delivery</strong> — to send order notifications and account messages.</li>
+    <li><strong>performance of a contract</strong> — using your name and contact details to set up your workspace, run your subscription and tell you about problems with the platform;</li>
+    <li><strong>legitimate interest</strong> — using information about how you access our website and workspace to prevent fraud, produce reporting and analytics, and improve the Service;</li>
+    <li><strong>compliance with a legal obligation</strong> — using copies of identification you provide where the law requires it, such as know-your-customer, anti-money-laundering or anti-terrorism rules;</li>
+    <li><strong>consent</strong> — using your name and email address to send marketing, where no other lawful basis applies.</li>
   </ul>
-  <p>These providers may only use the data to deliver the service we asked for. We do not sell or rent data to data brokers.</p>
 
-  <h2>6. Security</h2>
-  <p>Connections are encrypted in transit, credentials are hashed, access to production data is limited to staff who need it, and workspace data is separated so one customer cannot read another’s. No system is perfectly secure, so we also keep backups and an incident process, and we will tell you without delay if a breach affects your workspace.</p>
+  <h2 id="rights">4. Your rights over your information</h2>
+  <p class="sum">Wherever you live, you should be able to access and control your Personal Data. Some rights apply only in certain circumstances, and all can be limited by law.</p>
+  <p>Depending on where you live and how you use Fewori, you may have the right to request access to, correction of, deletion of, or portability of your Personal Data, and to restrict or object to certain uses. Exercising those rights will never cost you more or change the level of service you receive.</p>
+  <p>Where Fewori acts as a processor or service provider for a merchant, that merchant is the party you should contact: it decides what is collected on its pages and how long it is kept. If you ask us instead, we will pass the request to the relevant merchant and help them answer it.</p>
+  <p>If you are a merchant, partner, website visitor, or someone else we have a direct relationship with, send your request to our support team through the contact section of our website, or to <strong>privacy@fewori.com</strong>. We may ask for extra information to verify your identity, and may use a third party to help with that. Details for US residents are in section 11.</p>
+  <p>If you are not satisfied with our response, tell us and we will try to resolve it; if you are in the EEA or the UK you may also complain to your local data protection authority at any time.</p>
+  <p>Because there is no agreed meaning for a “Do Not Track” signal, we do not respond to those signals in any particular way.</p>
 
-  <h2>7. Retention</h2>
-  <p>We keep workspace data while your account is active. Order and customer records stay available to you until you delete them or close the workspace. When you close your account we delete or anonymise your content within 30 days, except for records we must keep for tax, accounting or legal reasons.</p>
+  <h2 id="where">5. Where we send your information</h2>
+  <p class="sum">We work and process data across regions, so your Personal Data may be transferred outside your state, province or country. We take steps to protect it when we do.</p>
+  <p>To operate the Service we may send your Personal Data outside your state, province or country, including to the United States and to other regions where our providers operate. That data may be subject to the laws of those places. When we transfer data across borders we do so under applicable law, and we keep the protections described below in place.</p>
 
-  <h2>8. Your rights</h2>
-  <p>Depending on where you live, you may ask to access, correct, export or delete your personal data, or to restrict or object to how we process it. Shoppers who bought from your page should contact you first, since you are the merchant for that sale; we will help you respond.</p>
+  <h3>Transfers outside the EEA, the UK and Switzerland</h3>
+  <p>Where you are located in the EEA, the UK or Switzerland, we transfer Personal Data outside those regions in accordance with applicable law, using approved mechanisms such as the European Commission’s <strong>Standard Contractual Clauses</strong> and supplementary measures where needed.</p>
+  <p>Where we transfer Personal Data to third parties — for example our hosting, payment or AI providers — those transfers are covered by contractual commitments, including Standard Contractual Clauses where appropriate, and by our processor terms.</p>
+  <p>We do what we can to protect your information, but we may at times be legally required to disclose Personal Data, for example under a valid court order or equivalent legal demand. Where we are permitted to, we tell you first.</p>
 
-  <h2>9. Cookies</h2>
-  <p>We use essential cookies to keep you signed in and to remember your workspace settings. Published pages use the minimum needed to record a page view and a form submission. We do not use advertising cookies, and we do not run third-party ad pixels on our own site.</p>
+  <h2 id="retention">6. How long we retain your information</h2>
+  <p class="sum">We keep Personal Data only as long as needed for the purposes it was collected for, plus any period the law requires.</p>
+  <p>To decide a retention period we consider the amount, nature and sensitivity of the data, the risk of harm from unauthorised use or disclosure, the purposes of processing and whether those purposes can be met another way, and the applicable legal requirements. We also keep and use Personal Data as needed to comply with legal obligations, resolve disputes and enforce our policies.</p>
+  <p>If you stop using the Service or delete your workspace, we delete your information or keep it only in aggregated and anonymised form. Where Fewori processes data for a merchant, that merchant — not Fewori — decides the retention period for its customers’ data.</p>
 
-  <h2>10. Children</h2>
-  <p>The Service is for businesses and is not directed to children under 16. We do not knowingly collect personal information from children.</p>
+  <h2 id="ml">7. Our use of machine learning</h2>
+  <p class="sum">We use machine learning to write and photograph pages. A human stays in the loop, and we do not use it for decisions with legal or similarly significant effects.</p>
+  <p>Machine learning — which some EEA and UK laws call automated decision-making — is how Fewori turns a photo, a name and a short description into copy, photography and page structure. When we use it we either keep a human involved in the process, so the result is not fully automated, or use it in ways that have no legal or similarly significant effect on you.</p>
+  <p>To generate a page, the product photos, names and descriptions you provide are sent to the model providers that power the feature. We send what the generation needs — not your password, your shoppers’ data or your other pages. Generated results are yours to edit, replace or discard before publishing.</p>
 
-  <h2>11. Changes</h2>
-  <p>We may update this policy as the Service changes. When a change is material we will post it here, update the date above, and notify workspace owners by email.</p>
+  <h2 id="protect">8. How we protect your information</h2>
+  <p class="sum">Our teams work to keep your information safe and our platform sound, but no system is perfectly secure.</p>
+  <p>Connections are encrypted in transit, credentials are hashed, workspace data is separated so one customer cannot read another’s, and access to production data is limited to the people who need it. We test our systems, keep backups and maintain an incident process. Fewori is not 100% secure — no method of transmission over the internet or of electronic storage is — so we cannot guarantee absolute security, but we will tell you without delay if a breach affects your workspace.</p>
+  <p>Card numbers are never stored on our servers: payments run through tokenised providers that handle card data directly. We design the checkout with the Payment Card Industry Data Security Standards (PCI DSS) in mind and keep our handling of account data under review.</p>
 
-  <h2>12. Contact</h2>
-  <p>Questions about privacy, a data request, or a deletion: write to us through the contact section of our website and we will respond within a reasonable time.</p>
-  <div class="note">This policy is written for the Fewori platform as described on our site. It is not legal advice; have your own counsel review it before you launch commercially.</div>
+  <h2 id="cookies">9. How we use cookies and other tracking technologies</h2>
+  <p class="sum">We use cookies to keep you signed in and the Service working. Tracking pixels you add to your own pages are yours to manage.</p>
+  <p>We use cookies and similar technologies on our website and while providing the Service. Essential cookies keep you signed in, remember workspace settings and protect forms against abuse; performance cookies tell us which pages break or load slowly.</p>
+  <p>Pages you publish use the minimum needed to record a page view, a form submission and an order. If you choose to add tracking pixels through the Pixel Manager, those are your pixels and your responsibility — you must obtain the consents the law requires from the people whose events you track. We do not run advertising cookies on our own site.</p>
+
+  <h2 id="contact">10. How you can reach us</h2>
+  <p class="sum">Questions, requests and complaints about privacy all go to the same place.</p>
+  <p>To ask about, make a request relating to, or complain about how we process your Personal Data, use the contact section of our website or write to <strong>privacy@fewori.com</strong>. For a legally binding demand for someone else’s Personal Data — a subpoena or court order, for example — contact us through the same address and mark it clearly.</p>
+  <p>If your question is about how a particular merchant handles your data — what it collects on its pages, how long it keeps orders — contact that merchant or read its privacy policy. We cannot answer for them.</p>
+
+  <h2 id="us">11. United States regional privacy notice</h2>
+  <p>This notice supplements the Privacy Policy for individuals living in US states with their own privacy laws, such as the California Consumer Privacy Act, the Colorado Privacy Act, the Connecticut Data Privacy Act, the Utah Consumer Privacy Act and the Virginia Consumer Data Protection Act (together, the “<strong>US Privacy Laws</strong>”).</p>
+
+  <h3>What we collect and share about you</h3>
+  <p>To provide the Service we process information about you, including Personal Data. <strong>We do not “sell” your Personal Data</strong> as that term is defined under US Privacy Laws.</p>
+  <p>Over the past 12 months the categories we may have collected include:</p>
+  <ul>
+    <li><strong>identifiers</strong> — name, email address, mailing address, phone number;</li>
+    <li><strong>customer record information</strong> — name, mailing and billing address, phone number, card details (held by our payment providers, not by us);</li>
+    <li><strong>commercial information</strong> — products you publish or buy, items in a cart, favourites, reviews, and details you give us about you and your business;</li>
+    <li><strong>photos and videos</strong> — which may include face imagery if you choose to upload them;</li>
+    <li><strong>internet and network activity</strong> — device and browser, network connection, IP address, and how you browse our site and workspace;</li>
+    <li><strong>geolocation data</strong> — your mailing and billing address;</li>
+    <li><strong>inferences</strong> — preferences and interests derived from other Personal Data, used to personalise your experience;</li>
+    <li><strong>other information you provide</strong>;</li>
+    <li><strong>sensitive Personal Data</strong> — account credentials, and any information you voluntarily disclose that may reveal characteristics such as racial or ethnic origin.</li>
+  </ul>
+  <p>Those categories may be disclosed to:</p>
+  <ul>
+    <li>companies that help us provide the Service, including cloud hosting, payment providers and financial institutions, security vendors, email providers and analytics vendors;</li>
+    <li>advertising and marketing vendors, where you have consented;</li>
+    <li>merchants whose pages you visit or buy from;</li>
+    <li>partners who help merchants build or run pages;</li>
+    <li>law enforcement or other third parties in connection with legal requests, to comply with law or to prevent harm.</li>
+  </ul>
+
+  <h3>Why we collect and share it</h3>
+  <p>We use and share Personal Data for the purposes set out in this Privacy Policy. Sensitive Personal Data is used or disclosed only with your specific consent where required, or as the law otherwise permits.</p>
+
+  <h3>Where it comes from</h3>
+  <ul>
+    <li><strong>You</strong> — information you give us when you open a workspace, publish a page, place or receive an order, read our website or contact support, plus how you browse our site and workspace.</li>
+    <li><strong>Your devices</strong> — information from the computers, phones and other connected devices you use, combined across those devices.</li>
+    <li><strong>Third parties</strong> — service providers who help us review accounts for fraud; payment providers who confirm a transaction; analytics and cookie providers who measure how our content is used.</li>
+  </ul>
+
+  <h3>How long we keep it</h3>
+  <p>We generally keep Personal Data while you use the Service, or until you ask us to delete it, and longer where we must to meet a legal obligation or protect our interests or someone else’s. If you close a workspace or your subscription ends, we keep workspace information for two years before the deletion process begins. Where we act as a processor for a merchant, the merchant decides how long customer data is kept.</p>
+
+  <h3>Your rights</h3>
+  <p>Depending on where you live and subject to exceptions, you may have some or all of these rights:</p>
+  <ul>
+    <li><strong>right to know</strong> — what Personal Data we collect, use or disclose about you, and our practices;</li>
+    <li><strong>right to correct</strong> — correction of inaccurate Personal Data we hold about you;</li>
+    <li><strong>right to delete</strong> — deletion of Personal Data we collected about you.</li>
+  </ul>
+  <p>To exercise them, send a request through the contact section of our website or to <strong>privacy@fewori.com</strong>. If you visited or bought from a merchant’s page, contact that merchant directly; if you send a request to us we will forward it. To protect your information we may verify your identity first, and may ask for extra details such as your email address or a government-issued ID. You may use an authorised agent; in that case we may need additional information to verify you before acting.</p>
+  <p>We will not discriminate against you for exercising any of these rights. In some states you may appeal a decision we make on a request; contact support if you wish to appeal.</p>
+
+  <h3>How to reach us</h3>
+  <p>Questions or concerns about how we process Personal Data: contact support or <strong>privacy@fewori.com</strong>. Requests relating to your Personal Data follow the method described just above.</p>
+
+  <div class="note">This policy is written for the Fewori platform as described on our site. It is not legal advice — have your own counsel review it, and check the retention periods and legal bases against the jurisdictions you actually sell in, before you launch commercially.</div>
 </main>
 
 <footer class="foot">
@@ -157,7 +248,7 @@ a:hover{border-bottom-color:var(--azul)}
       <a class="is-now" href="privacy.html">Privacy</a>
       <a href="terms.html">Terms</a>
       <a href="refund.html">Refund</a>
-      <a href="onlines-home.html#contact">Contact</a>
+      <a href="index.html#contact">Contact</a>
     </div>
   </div>
 </footer>
